@@ -1,0 +1,34 @@
+{
+  "id": "com.example.helloworld",
+  "version": "0.0.1",
+  "name": "Gr0 Stripe App",
+  "icon": "",
+  "permissions": [],
+  "app_backend": {
+    "webhooks": []
+  },
+  "ui_extension": {
+    "views": [
+      {
+        "viewport": "stripe.dashboard.customer.detail",
+        "component": "App"
+      },
+      {
+        "viewport": "stripe.dashboard.invoice.list",
+        "component": "InvoiceListView"
+      },
+      {
+        "viewport": "stripe.dashboard.invoice.detail",
+        "component": "InvoiceDetailView"
+      }
+    ],
+    "actions": [],
+    "content_security_policy": {
+      "connect-src": null,
+      "image-src": null,
+      "purpose": ""
+    }
+  },
+  "post_install_action": null,
+  "constants": null
+}
